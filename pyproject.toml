@@ -1,0 +1,17 @@
+[project]
+name = "ms2maccs"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+dependencies = [
+    "matchms==0.33.0",
+    "numpy==2.4.6",
+    "rdkit==2026.3.2",
+    "tqdm==4.67.3",
+    # torch must be installed separately:
+    # pip install torch==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
