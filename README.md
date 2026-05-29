@@ -11,7 +11,7 @@ MS2MACCS predicts MACCS fingerprints (167 bit vector) from tandem mass spectrome
 ## Installation
 
 ```
-conda create -n ms2maccs python=3.12
+conda create -n ms2maccs python=3.11
 conda activate ms2maccs
 
 git clone https://github.com/j-a-dietrich/MS2MACCS.git
