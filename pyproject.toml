@@ -8,10 +8,11 @@ dependencies = [
     "numpy==2.4.6",
     "rdkit==2026.3.2",
     "tqdm==4.67.3",
-    # torch must be installed separately:
-    # pip install torch==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
 ]
 
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ms2maccs*"]
