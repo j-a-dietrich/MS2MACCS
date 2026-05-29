@@ -16,7 +16,7 @@ conda activate ms2maccs
 
 git clone https://github.com/j-a-dietrich/MS2MACCS.git
 cd MS2MACCS
-pip install . -e
+pip install -e .
 
 # if cuda available
 pip install torch==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
