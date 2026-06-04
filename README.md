@@ -1,14 +1,14 @@
 ![header](imgs/logo.jpg)
 
-MS2MACCS predicts MACCS fingerprints (167 bit vector) from tandem mass spectrometry data (MS2). It does so by combining a look-up table for common fragment structure combined with a transformer architecture. Read more about its design in our manuscript (when ready).<br>
+MS2MACCS predicts MACCS fingerprints (167 bit vector) from tandem mass spectrometry data (MS2). It does so by combining a look-up table for common fragment structure combined with a transformer architecture.
 
-#### MS2MACCS ...
-    ... predicts fingerprints from spectra measured in *positive* **and** *negative* mode <br>
-    ... predicts ~XXX spectra per second <br>
-    ... shows comparable results with other state-of-the art tools <br>
-    ... is completely open source <br>
+## ✨ Why use MS2MACCS?
+➕➖ predicts fingerprints from spectra measured in *positive* **and** *negative* mode <br>
+⚡predicts ~40-300 spectra per second (cpu i7 8th generation vs gpu RTX A5000) <br>
+🔝 shows comparable results with other state-of-the art tools (we do not achieve as good results as Sirius)<br>
+🆓 MS2MACCS is completely open source (do with it whatever you want)<br>
 
-## Installation
+## 🛠 Installation
 
 ```
 conda create -n ms2maccs python=3.10
@@ -26,7 +26,7 @@ pip install torch==2.7.1
 
 ```
 
-## Quickstart
+## 🚀 Quickstart
 ```
 from ms2maccs import MS2MACCS
 
@@ -41,6 +41,12 @@ pred_maccs = m.predict("../ms2_data/test_specs_H_p_mode.mgf").to("cpu")
 
 # see demo/demo.ipynb
 ```
+
+## 📬 Get in Touch
+💡 Questions, ideas, or contributions? Open an issue.
+
+## 📚 Citation
+coming at some point (potentially)
 
 
 
