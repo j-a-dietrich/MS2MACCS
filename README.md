@@ -37,7 +37,7 @@ m = MS2MACCS(
     "cpu", 
 )
 
-pred_maccs = m.predict("../ms2_data/test_specs_H_p_mode.mgf").to("cpu")
+pred_maccs = m.calc_fp("../ms2_data/test_specs_H_p_mode.mgf").to("cpu")
 
 # see demo/demo.ipynb
 ```
