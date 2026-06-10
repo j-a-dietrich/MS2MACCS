@@ -8,6 +8,7 @@ dependencies = [
     "numpy>=2.0",
     "rdkit>=2024.3.5,<2025.0.0",
     "tqdm>=4.65.0",
+    "xgboost==3.12",
 ]
 
 [build-system]
