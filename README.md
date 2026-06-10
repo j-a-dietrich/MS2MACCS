@@ -32,12 +32,15 @@ from ms2maccs import MS2MACCS
 
 m = MS2MACCS(
     "../models/standard_model.pt", 
-    "../fp_bit_maps/fp_bit_map_H_p_mode.pkl", 
-    "../fp_bit_maps/fp_bit_map_H_n_mode.pkl", 
+    "../bit_maps/fp_bit_map_H_p_mode.pkl", 
+    "../bit_maps/fp_bit_map_H_n_mode.pkl", 
     "cpu", 
 )
 
 pred_maccs = m.calc_fp("../ms2_data/test_specs_H_p_mode.mgf").to("cpu")
+
+# for tox predictions are MLinvitroTox MACCS models necessary (no published yet)
+pred_tox = m.calc_tox("../ms2_data/test_specs_H_p_mode.mgf").to("cpu")
 
 # see demo/demo.ipynb
 ```
